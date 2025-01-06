@@ -2,16 +2,16 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Dillion Verma",
-  initials: "DV",
+  name: "Abdullah Khan",
+  initials: "AK",
   url: "https://dillion.io",
-  location: "San Francisco, CA",
+  location: "Toronto, ON",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Driven by Innovation. Fueled by Passion.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
-  avatarUrl: "/me.png",
+    "DevOps Engineer with expertise in software development, cloud infrastructure, and pipeline automation, leveraging platforms like Azure to optimize workflows and improve reliability. Driven by a passion for merging technology with the automotive world, I thrive on creating innovative solutions and services that combine my love for cars and technology, ultimately advancing the industry.",
+  avatarUrl: "/abd.jpg",
   skills: [
     "React",
     "Next.js",
@@ -35,14 +35,14 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/akhan2001",
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/abdullah-khan-2001/",
         icon: Icons.linkedin,
 
         navbar: true,
@@ -52,36 +52,42 @@ export const DATA = {
         url: "https://dub.sh/dillion-twitter",
         icon: Icons.x,
 
-        navbar: true,
+        navbar: false,
       },
       Youtube: {
         name: "Youtube",
         url: "https://dub.sh/dillion-youtube",
         icon: Icons.youtube,
-        navbar: true,
+        navbar: false,
       },
+      // Instagram: {
+      //   name: "Instagram",
+      //   url: "https://www.instagram.com/abdxllahkhan",
+      //   icon: Icons.instagram,
+      //   navbar: false,
+      // },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:m.abdullah.khan567@gmail.com",
         icon: Icons.email,
 
-        navbar: false,
+        navbar: true,
       },
     },
   },
 
   work: [
     {
-      company: "Atomic Finance",
+      company: "Motorminds",
       href: "https://atomic.finance",
       badges: [],
-      location: "Remote",
-      title: "Bitcoin Protocol Engineer",
+      location: "",
+      title: "Co-Founder & Tech Lead",
       logoUrl: "/atomic.png",
-      start: "May 2021",
-      end: "Oct 2022",
+      start: "Oct 2024",
+      end: "Present",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        "• Developing and deploying robust software tools that enable auto shops to manage workflows, including customer management, job scheduling, and parts inventory tracking, optimizing their daily operations. \n• Integrating AI by designing ETL pipelines, building custom LLM training workflows, and exploring Retrieval-Augmented Generation (RAG) methodologies to enhance AI-driven features, improve user experience, and automate processes like client support and service recommendations",
     },
     {
       company: "Shopify",
