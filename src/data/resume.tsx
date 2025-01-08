@@ -11,7 +11,7 @@ export const DATA = {
     "Driven by Innovation. Fueled by Passion.",
   summary:
     "DevOps Engineer with expertise in software development, cloud infrastructure, and pipeline automation, leveraging platforms like Azure to optimize workflows and improve reliability. Driven by a passion for merging technology with the automotive world, I thrive on creating innovative solutions and services that combine my love for cars and technology, ultimately advancing the industry.",
-  avatarUrl: "/abd.jpg",
+  avatarUrl: "/abd.JPG",
   skills: [
     "React",
     "Next.js",
