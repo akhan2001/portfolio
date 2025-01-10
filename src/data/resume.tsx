@@ -92,7 +92,7 @@ export const DATA = {
       start: "Oct 2024",
       end: "Present",
       description:
-        "• Developing and deploying robust software tools that enable auto shops to manage workflows, including customer management, job scheduling, and parts inventory tracking, optimizing their daily operations. \n• Integrating AI by designing ETL pipelines, building custom LLM training workflows, and exploring Retrieval-Augmented Generation (RAG) methodologies to enhance AI-driven features, improve user experience, and automate processes like client support and service recommendations",
+        "• Developing and deploying a SaaS Application to enable auto shops to manage workflows, including customer management, job scheduling, and parts inventory tracking, optimizing their daily operations. • Integrating AI by designing ETL pipelines, building custom LLM training workflows, and exploring Retrieval-Augmented Generation (RAG) methodologies to enhance AI-driven features, improve user experience, and automate processes like client support and service recommendations",
     },
     {
       company: "Auto Shop Agency",

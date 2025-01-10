@@ -17,7 +17,7 @@ interface ResumeCardProps {
   href?: string;
   badges?: readonly string[];
   period: string;
-  description?: string;
+  description?: string | React.ReactNode;
 }
 export const ResumeCard = ({
   logoUrl,
@@ -84,7 +84,7 @@ export const ResumeCard = ({
                 {period}
               </div>
             </div>
-            {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
+            {subtitle && <div className="mt-1 font-sans text-xs">{subtitle}</div>}
           </CardHeader>
           {description && (
             <motion.div

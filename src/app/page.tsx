@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { workerData } from "worker_threads";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -23,21 +24,23 @@ export default function Page() {
                     <AvatarFallback>{DATA.initials}</AvatarFallback>
                     </Avatar>
                 </BlurFade>
+                <BlurFade delay={BLUR_FADE_DELAY}>
                 <div className="flex items-center justify-center space-x-2 mt-1">
                     <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
                     <p className="text-sm text-gray-400">{`Location: ${DATA.location}`}</p>
                 </div>
-                <div className="flex-col flex flex-1 space-y-1.5 text-center mt-5">
+                </BlurFade>
+                <div className="flex flex-col items-center justify-center space-y-1.5 text-center mt-5">
                     <BlurFadeText
-                    delay={BLUR_FADE_DELAY}
-                    className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-                    yOffset={8}
-                    text={`${DATA.name}`}
+                        delay={BLUR_FADE_DELAY}
+                        className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                        yOffset={8}
+                        text={`${DATA.name}`}
                     />
                     <BlurFadeText
-                    className="max-w-[600px] md:text-xl"
-                    delay={BLUR_FADE_DELAY}
-                    text={DATA.description}
+                        className="max-w-[600px] md:text-xl"
+                        delay={BLUR_FADE_DELAY}
+                        text={DATA.description}
                     />
                 </div>
             </div>
@@ -67,12 +70,23 @@ export default function Page() {
                 key={work.company}
                 logoUrl={work.logoUrl}
                 altText={work.company}
-                title={work.company}
-                subtitle={work.title}
+                title={work.title}
+                subtitle={work.company}
                 href={work.href}
                 badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
-                description={work.description}
+                description={
+                    <ul className="list-disc pl-5">
+                      {work.description
+                        .split("•")
+                        .filter((point) => point.trim() !== "") // Remove empty points
+                        .map((point, idx) => (
+                          <li key={idx} className="mt-1 text-sm text-700">
+                            {point.trim()}
+                          </li>
+                        ))}
+                    </ul>
+                }
             />
             </BlurFade>
           ))}
