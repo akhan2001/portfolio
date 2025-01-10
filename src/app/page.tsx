@@ -14,31 +14,35 @@ const BLUR_FADE_DELAY = 0.04;
 export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
-      <section id="hero">
+        <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="gap-2 flex justify-between">
-            <div className="flex-col flex flex-1 space-y-1.5">
-              <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-                yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
-              />
-              <BlurFadeText
-                className="max-w-[600px] md:text-xl"
-                delay={BLUR_FADE_DELAY}
-                text={DATA.description}
-              />
+            <div className="gap-2 flex flex-col items-center">
+                <BlurFade delay={BLUR_FADE_DELAY}>
+                    <Avatar className="size-28 border">
+                    <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                    <AvatarFallback>{DATA.initials}</AvatarFallback>
+                    </Avatar>
+                </BlurFade>
+                <div className="flex items-center justify-center space-x-2 mt-1">
+                    <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                    <p className="text-sm text-gray-400">{`Location: ${DATA.location}`}</p>
+                </div>
+                <div className="flex-col flex flex-1 space-y-1.5 text-center mt-5">
+                    <BlurFadeText
+                    delay={BLUR_FADE_DELAY}
+                    className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                    yOffset={8}
+                    text={`${DATA.name}`}
+                    />
+                    <BlurFadeText
+                    className="max-w-[600px] md:text-xl"
+                    delay={BLUR_FADE_DELAY}
+                    text={DATA.description}
+                    />
+                </div>
             </div>
-            <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
-            </BlurFade>
-          </div>
         </div>
-      </section>
+        </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-xl font-bold">About</h2>
@@ -59,7 +63,7 @@ export default function Page() {
               key={work.company}
               delay={BLUR_FADE_DELAY * 6 + id * 0.05}
             >
-              <ResumeCard
+            <ResumeCard
                 key={work.company}
                 logoUrl={work.logoUrl}
                 altText={work.company}
@@ -69,7 +73,7 @@ export default function Page() {
                 badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
                 description={work.description}
-              />
+            />
             </BlurFade>
           ))}
         </div>
