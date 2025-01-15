@@ -155,32 +155,22 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Automeetic",
+      href: "https://github.com/akhan2001/automeetic",
+      dates: "",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
+        "Automeetic is a social platform built for car enthusiasts to connect, share their passion, and organize car meetups. Users can join groups, chat, and discover upcoming events, creating a dynamic community experience.",
+      technologies: ["JavaScript", "React", "Node.js", "MongoDB"],
       links: [
         {
-          type: "Website",
-          href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
+          type: "Source",
+          href: "https://github.com/akhan2001/automeetic",
+          icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+      image: "/automeetic.png",
+      video: "",
     },
     {
       title: "Magic UI",
@@ -211,8 +201,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "/motorminds_banner.png",
+      video: "",
     },
     {
       title: "llm.report",
@@ -244,8 +234,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      image: "/autoshopagency_banner.png",
+      video: "",
     },
     {
       title: "Automatic Chat",
@@ -272,9 +262,8 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+      image: "/styling_banner.png",
+      video: "",
     },
   ],
   hackathons: [
