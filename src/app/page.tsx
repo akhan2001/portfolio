@@ -141,7 +141,7 @@ export default function Page() {
                   Explore My Work in Automotive and Tech
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                I've designed and developed a range of projects, from sleek websites to advanced web applications, with a strong focus on automotive and technology. Here are some of my favorites.
+                I&quot;ve designed and developed a range of projects, from sleek websites to advanced web applications, with a strong focus on automotive and technology. Here are some of my favorites.
                 </p>
               </div>
             </div>
