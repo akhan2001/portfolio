@@ -32,31 +32,28 @@ export const DATA = {
   ],  
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    // { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "m.abdullah.khan567@gmail.com",
+    tel: "+1 905-699-2659",
     social: {
       GitHub: {
         name: "GitHub",
         url: "https://github.com/akhan2001",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/abdullah-khan-2001/",
         icon: Icons.linkedin,
-
         navbar: true,
       },
       X: {
         name: "X",
         url: "https://dub.sh/dillion-twitter",
         icon: Icons.x,
-
         navbar: false,
       },
       Youtube: {
