@@ -72,7 +72,6 @@ export const DATA = {
         name: "Send Email",
         url: "mailto:m.abdullah.khan567@gmail.com",
         icon: Icons.email,
-
         navbar: true,
       },
     },
@@ -143,9 +142,9 @@ export const DATA = {
   education: [
     {
       school: "University of Guelph",
-      href: "",
+      href: "https://www.uoguelph.ca",
       degree: "Bachelors of Computing; Honours in Software Engineering",
-      logoUrl: "",
+      logoUrl: "/uoguelph.png",
       start: "2019",
       end: "2024",
     },
