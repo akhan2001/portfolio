@@ -84,7 +84,7 @@ export const DATA = {
       badges: [],
       location: "",
       title: "Co-Founder & Tech Lead",
-      logoUrl: "",
+      logoUrl: "/motorminds-pfp.PNG",
       start: "Oct 2024",
       end: "Present",
       description:
@@ -96,7 +96,7 @@ export const DATA = {
       href: "",
       location: "Remote",
       title: "Owner & Managing Director",
-      logoUrl: "",
+      logoUrl: "/Auto-Shop-Agency-PFP.png",
       start: "May 2024",
       end: "Present",
       description:
@@ -108,7 +108,7 @@ export const DATA = {
       badges: [],
       location: "",
       title: "Web Developer (Cloud)",
-      logoUrl: "",
+      logoUrl: "/agency_arranged_logo.png",
       start: "Jan 2023",
       end: "Apr 2024",
       description:
@@ -120,7 +120,7 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Programmer Analyst",
-      logoUrl: "",
+      logoUrl: "/ctfs.png",
       start: "Jan 2023",
       end: "Sep 2023",
       description:
@@ -132,7 +132,7 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Security Analyst (DevOps)",
-      logoUrl: "",
+      logoUrl: "/CanadianTireLogo.png",
       start: "Jan 2022",
       end: "Dec 2022",
       description:
