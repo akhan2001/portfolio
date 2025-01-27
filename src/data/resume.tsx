@@ -151,6 +151,32 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Motorminds",
+      href: "https://motorminds.ca",
+      dates: "Sept 2024 - Present",
+      active: true,
+      description:
+        "Motorminds is an AI-integrated SaaS platform designed to optimize automotive workflows, customer management, and parts inventory tracking for auto shops.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "Azure OpenAI",
+        "Terraform",
+        "TailwindCSS",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://motorminds.ca",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/motorminds_banner.png",
+      video: "",
+    },
+    {
       title: "Automeetic",
       href: "https://github.com/akhan2001/automeetic",
       dates: "",
@@ -169,92 +195,50 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/motorminds_banner.png",
-      video: "",
-    },
-    {
-      title: "llm.report",
-      href: "https://llm.report",
+      title: "Auto Shop Agency",
+      href: "https://autoshopagency.webflow.io",
       dates: "April 2023 - September 2023",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "Auto Shop Agency empowers auto shops through digital marketing and branding services, offering tailored solutions like custom websites and SEO optimization.",
       technologies: [
         "Next.js",
         "Typescript",
         "PostgreSQL",
         "Prisma",
+        "Webflow",
         "TailwindCSS",
         "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
       ],
       links: [
         {
           type: "Website",
-          href: "https://llm.report",
+          href: "https://autoshopagency.webflow.io",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "/autoshopagency_banner.png",
       video: "",
     },
     {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
+      title: "Styling",
+      href: "https://styling-apparel.com",
       dates: "April 2023 - March 2024",
       active: true,
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+        "Styling is an automotive apparel lifestyle brand and an emerging car videography and production company, merging car culture with creative expression.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "Shopify",
+        "Webflow",
+        "Figma",
+        "Adobe Premiere",
+        "Final Cut Pro",
         "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
       ],
       links: [
         {
           type: "Website",
-          href: "https://automatic.chat",
+          href: "https://styling-apparel.com",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -263,16 +247,16 @@ export const DATA = {
     },
   ],
   hackathons: [
-    {
-      title: "Hack Western 5",
-      dates: "November 23rd - 25th, 2018",
-      location: "London, Ontario",
-      description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
+    // {
+    //   title: "Hack Western 5",
+    //   dates: "November 23rd - 25th, 2018",
+    //   location: "London, Ontario",
+    //   description:
+    //     "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+    //   image:
+    //     "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
+    //   mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+    //   links: [],
+    // },
   ],
 } as const;
